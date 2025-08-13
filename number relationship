@@ -1,0 +1,19 @@
+public class NumberRelationship {
+    public static void main(String[] args) {
+        int a = 3;
+        int b = 7;
+        int c = 10;
+
+        if (a != b && b != c && a != c) {
+            if (a < b && b < c) {
+                System.out.println("Strictly Increasing");
+            } else if (a > b && b > c) {
+                System.out.println("Strictly Decreasing");
+            } else if (b > a && b > c) {
+                System.out.println("Middle number is largest");
+            } else {
+                System.out.println("No specific pattern");
+            }
+        }-
+    }
+}
